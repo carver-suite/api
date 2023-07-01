@@ -1,16 +1,16 @@
 {
-  "name": "api",
+  "name": "@mgyugcha/carver-suite-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "build": "esbuild src/index.ts --bundle --platform=node --packages=external --outdir=dist",
+    "build": "esbuild src/index.ts --bundle --minify --platform=node --packages=external --outdir=dist",
     "dev": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "GPL-3.0",
   "devDependencies": {
     "@types/command-exists": "^1.2.0",
     "esbuild": "^0.18.8",
