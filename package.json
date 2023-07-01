@@ -13,6 +13,7 @@
   "license": "GPL-3.0",
   "devDependencies": {
     "@types/command-exists": "^1.2.0",
+    "@types/node": "^20.3.3",
     "esbuild": "^0.18.8",
     "esbuild-node-tsc": "^2.0.5",
     "nodemon": "^2.0.22",

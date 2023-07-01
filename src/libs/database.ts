@@ -55,7 +55,7 @@ const cargarTabla = () =>
 export const getDatabase = async (): Promise<Database> => {
   if (db) return db
   // cargar base de datos
-  const dbPath = '/home/mgyugcha/.config/Electron/database.db'
+  const dbPath = process.env.DB!
   console.info('cargando base de datos en:', dbPath)
   db = new sqlite3.Database(dbPath)
   // cargando tabla
